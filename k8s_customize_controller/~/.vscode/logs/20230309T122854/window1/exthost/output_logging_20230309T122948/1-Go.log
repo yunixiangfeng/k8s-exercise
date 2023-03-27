@@ -1,0 +1,25 @@
+Starting linting the current package at /home/gopath/src/k8s_customize_controller
+/home/gopath/src/k8s_customize_controller>Finished running tool: /home/gopath/bin/staticcheck
+/home/gopath/src/k8s.io/apimachinery/pkg/util/json/json.go:24:2 cannot find package "sigs.k8s.io/json" in any of:
+/home/gopath/src/k8s.io/apimachinery/pkg/util/net/http.go:39:2 cannot find package "golang.org/x/net/http2" in any of:
+/home/gopath/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go:30:2 cannot find package "sigs.k8s.io/yaml" in any of:
+/home/gopath/src/k8s.io/klog/contextual.go:22:2 cannot find package "github.com/go-logr/logr" in any of:
+/home/gopath/src/k8s_customize_controller/controller.go:6:2 cannot find package "github.com/golang/glog" in any of:
+/home/gopath/src/k8s_customize_controller/controller.go:7:2 cannot find package "k8s.io/api/core/v1" in any of:
+/home/gopath/src/k8s_customize_controller/controller.go:12:2 cannot find package "k8s.io/client-go/kubernetes" in any of:
+/home/gopath/src/k8s_customize_controller/controller.go:13:2 cannot find package "k8s.io/client-go/kubernetes/scheme" in any of:
+/home/gopath/src/k8s_customize_controller/controller.go:14:2 cannot find package "k8s.io/client-go/tools/cache" in any of:
+/home/gopath/src/k8s_customize_controller/controller.go:15:2 cannot find package "k8s.io/client-go/tools/record" in any of:
+/home/gopath/src/k8s_customize_controller/controller.go:16:2 cannot find package "k8s.io/client-go/util/workqueue" in any of:
+/home/gopath/src/k8s_customize_controller/pkg/client/clientset/versioned/clientset.go:26:2 cannot find package "k8s.io/client-go/discovery" in any of:
+/home/gopath/src/k8s_customize_controller/pkg/client/clientset/versioned/clientset.go:27:2 cannot find package "k8s.io/client-go/rest" in any of:
+/home/gopath/src/k8s_customize_controller/pkg/client/clientset/versioned/clientset.go:28:2 cannot find package "k8s.io/client-go/util/flowcontrol" in any of:
+
+Starting linting the current package at /home/gopath/src/k8s_customize_controller/pkg/signals
+/home/gopath/src/k8s_customize_controller/pkg/signals>Finished running tool: /home/gopath/bin/staticcheck
+/home/gopath/src/k8s_customize_controller/pkg/signals/signal_posix.go:11:5 var shutdownSignals is unused (U1000)
+
+Starting linting the current package at /home/gopath/src/k8s_customize_controller/pkg/signals
+/home/gopath/src/k8s_customize_controller/pkg/signals>Finished running tool: /home/gopath/bin/staticcheck
+/home/gopath/src/k8s_customize_controller/pkg/signals/signal.go:7:1 missing return (compile)
+

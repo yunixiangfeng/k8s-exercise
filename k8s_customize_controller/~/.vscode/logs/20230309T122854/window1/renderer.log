@@ -1,0 +1,14 @@
+2023-03-09 12:29:21.089 [info] [perf] Render performance baseline is 48ms
+2023-03-09 12:29:35.940 [error] RequestService#request (browser) - error https://vscodeexperiments.azureedge.net/experiments/vscode-experiments.json {}
+2023-03-09 12:29:49.309 [info] [perf] Render performance baseline is 48ms
+2023-03-09 12:30:07.310 [error] RequestService#request (browser) - error https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery {}
+2023-03-09 12:36:38.645 [error] invalid end position: Error: invalid end position
+	at handleResponse (/root/.vscode/extensions/golang.go-0.37.1/dist/goMain.js:4470:40)
+	at processMessageQueue (/root/.vscode/extensions/golang.go-0.37.1/dist/goMain.js:4293:13)
+	at Immediate.<anonymous> (/root/.vscode/extensions/golang.go-0.37.1/dist/goMain.js:4279:11)
+	at process.processImmediate (node:internal/timers:466:21)
+2023-03-09 12:39:37.181 [error] invalid end position: Error: invalid end position
+	at handleResponse (/root/.vscode/extensions/golang.go-0.37.1/dist/goMain.js:4470:40)
+	at processMessageQueue (/root/.vscode/extensions/golang.go-0.37.1/dist/goMain.js:4293:13)
+	at Immediate.<anonymous> (/root/.vscode/extensions/golang.go-0.37.1/dist/goMain.js:4279:11)
+	at process.processImmediate (node:internal/timers:466:21)
