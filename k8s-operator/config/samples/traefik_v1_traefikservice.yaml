@@ -1,0 +1,8 @@
+apiVersion: traefik.wu123.com/v1
+kind: TraefikService
+metadata:
+  name: traefikservice-sample
+spec:
+  # TODO(user): Add fields here
+  entrypoint: web
+  url: https://www.baiwu.com

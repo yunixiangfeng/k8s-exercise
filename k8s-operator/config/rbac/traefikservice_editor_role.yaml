@@ -1,0 +1,24 @@
+# permissions for end users to edit traefikservices.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: traefikservice-editor-role
+rules:
+- apiGroups:
+  - traefik.wu123.com
+  resources:
+  - traefikservices
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - traefik.wu123.com
+  resources:
+  - traefikservices/status
+  verbs:
+  - get

@@ -1,0 +1,20 @@
+# permissions for end users to view traefikservices.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: traefikservice-viewer-role
+rules:
+- apiGroups:
+  - traefik.wu123.com
+  resources:
+  - traefikservices
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - traefik.wu123.com
+  resources:
+  - traefikservices/status
+  verbs:
+  - get
