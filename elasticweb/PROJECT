@@ -1,0 +1,16 @@
+domain: wu123.com
+layout:
+- go.kubebuilder.io/v3
+projectName: elasticweb
+repo: elasticweb
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: wu123.com
+  group: elasticweb
+  kind: ElasticWeb
+  path: elasticweb/api/v1
+  version: v1
+version: "3"
