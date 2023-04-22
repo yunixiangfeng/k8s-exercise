@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: nginx-injection
+  name: test-alpine-inject01
+  labels:
+    role: myrole
+  annotations:
+    sidecar-injector-webhook.nginx.sidecar/need_inject: "true"
+spec:
+  containers:
+    - image: alpine
+      command:
+        - /bin/sh
+        - "-c"
+        - "sleep 60m"
+      imagePullPolicy: IfNotPresent
+      name: alpine
+  restartPolicy: Always

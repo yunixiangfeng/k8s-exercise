@@ -227,7 +227,7 @@ func mutationRequired(ignoredList []string, metadata *metav1.ObjectMeta) bool {
 	default:
 		return false
 	case "true":
-		return false
+		return true
 	}
 }
 
